@@ -1,7 +1,7 @@
 Reference code for the blog: [https://es.acervolima.com/creacion-de-un-backend-de-api-rest-utilizando-node-js-express-y-postgres/]
 
 # Contruir imagen
-docker build -t felipeyepes/nodejs-postgres .
+docker build -t felipeyepes/nodejs-web:v1 .
 # listar imeges
 docker images
 # crear un contenedor con esta imagen
@@ -13,4 +13,4 @@ docker images -a
 # Elimine el contenedor detenido y todas las imágenes, incluso las no utilizadas o pendientes, con el siguiente comando: 
 docker system prune -a
 # compilar y run
- docker run --name nodejs-postgres -p 3001:3001 -d felipeyepes/nodejs-postgres:v3
+ docker run --name nodejs-web -p 8080:8080 -d felipeyepes/nodejs-web:v1
